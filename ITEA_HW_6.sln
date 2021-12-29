@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITEA_HW_6", "ITEA_HW_6\ITEA_HW_6.csproj", "{13AF9F81-FB65-4957-A7A8-2761D7EE9508}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13AF9F81-FB65-4957-A7A8-2761D7EE9508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AF9F81-FB65-4957-A7A8-2761D7EE9508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AF9F81-FB65-4957-A7A8-2761D7EE9508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AF9F81-FB65-4957-A7A8-2761D7EE9508}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B78C396C-3AF7-40AF-A15B-B467DD1C5A29}
+	EndGlobalSection
+EndGlobal
