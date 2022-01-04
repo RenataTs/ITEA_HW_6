@@ -8,7 +8,7 @@ namespace HW6Library
     {
         public static int MinimumArrayValue(ref int[] array)
         {
-            if (array == null || array.Length == 0 || array.Length == 0)
+            if (array == null || array.Length == 0)
             {
                 throw new ArgumentNullException();
             }
