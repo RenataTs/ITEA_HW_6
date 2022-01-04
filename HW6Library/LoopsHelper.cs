@@ -6,11 +6,11 @@ namespace HW6Library
 {
     public class LoopsHelper
     {
-        public static double Exponention(double a, double b)
+        public static double Exponention(double a, int b)
         {
-            if (b % 1 != 0)
+            if (a == null || b == null)
             {
-                throw new ArgumentException("B is not integer!");
+                throw new ArgumentException();
             }
 
             double result = a;
@@ -87,11 +87,6 @@ namespace HW6Library
 
         public static int NumbersSumFromAToBWhichDivisibleBySeven(int a, int b)
         {
-            //if (a == null || b == null)
-            //{
-            //    throw new ArgumentException("A or B not Passed!");
-            //}
-
             if (a > b)
             {
                 VariablesHelper.Swap(ref a, ref b);

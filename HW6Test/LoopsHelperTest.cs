@@ -8,32 +8,15 @@ namespace HW6Test
     {
         [TestCase(-2, 3, -8)]
         [TestCase(3, 2, 9)]
+        [TestCase(3, null, 1)]
         public void Exponention_WhenBNotDouble_ShouldCalculateExponention(
             double a,
-            double b,
+            int b,
             double expectedResult)
         {
             double actualResult = LoopsHelper.Exponention(a, b);
 
             Assert.AreEqual(expectedResult, actualResult);
-        }
-
-        [TestCase(-2, 3.4)]
-        public void Exponention_WhenBDouble_ShouldThrowArgumentException(
-            double a,
-            double b)
-        {
-            try
-            {
-                LoopsHelper.Exponention(a, b);
-            }
-            catch (ArgumentException ex)
-            {
-                Assert.AreEqual("B is not integer!", ex.Message);
-                Assert.Pass();
-            }
-
-            Assert.Fail();
         }
 
         [TestCase(5, new int[] { 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 })]

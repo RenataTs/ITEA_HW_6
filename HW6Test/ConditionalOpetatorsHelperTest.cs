@@ -58,38 +58,19 @@ namespace HW6Test
         [TestCase(-3, 4, 2, -3, 2, 4)]
         [TestCase(-5, -2, 3, -5, -2, 3)]
         [TestCase(5, -2, 4, -2, 4, 5)]
+        [TestCase(5, -2, null, -2, null, 5)]
         public void ABCSort_WhenABCIsPassed_ShouldReturnQuarterPoint(
-            double sourceA,
-            double sourceB,
-            double sourceC,
-            double expectedA,
-            double expectedB,
-            double expectedC)
+            int sourceA,
+            int sourceB,
+            int sourceC,
+            int expectedA,
+            int expectedB,
+            int expectedC)
         {
-            (double, double, double) expectedResult = (expectedA, expectedB, expectedC);
-            (double, double, double) actualResult = ConditionalOperatorsHelper.ABCSort(sourceA, sourceB, sourceC);
+            (int, int, int) expectedResult = (expectedA, expectedB, expectedC);
+            (int, int, int) actualResult = ConditionalOperatorsHelper.ABCSort(sourceA, sourceB, sourceC);
 
             Assert.AreEqual(expectedResult, actualResult);
-        }
-
-
-        [TestCase(0, 4, 2.1)]
-        public void ABCSort_WhenABCArePassed_ShouldThrowArgumentException(
-            double sourceA,
-            double sourceB,
-            double sourceC)
-        {
-            try
-            {
-                ConditionalOperatorsHelper.ABCSort(sourceA, sourceB, sourceC);
-            }
-            catch (ArgumentException ex)
-            {
-                Assert.AreEqual("A, B, C should be integer!", ex.Message);
-                Assert.Pass();
-            }
-
-            Assert.Fail();
         }
 
         [TestCase(1, -2, -3, 3, -1)]

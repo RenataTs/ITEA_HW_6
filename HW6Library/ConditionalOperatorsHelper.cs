@@ -55,11 +55,11 @@ namespace HW6Library
             return n;
         }
 
-        public static (double, double, double) ABCSort(double a, double b, double c)
+        public static (int, int, int) ABCSort(int a, int b, int c)
         {
-            if (a % 1 != 0 || b % 1 != 0 || c % 1 != 0)
+            if (a == null || b == null || c == null)
             {
-                throw new ArgumentException("A, B, C should be integer!");
+                throw new ArgumentException();
             }
 
             if (a > b)

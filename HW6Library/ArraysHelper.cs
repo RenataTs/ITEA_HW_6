@@ -8,7 +8,7 @@ namespace HW6Library
     {
         public static int MinimumArrayValue(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -20,7 +20,7 @@ namespace HW6Library
 
         public static int MaximumArrayValue(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -72,7 +72,7 @@ namespace HW6Library
 
         public static int ElementsSumWithOddIndex(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -89,7 +89,7 @@ namespace HW6Library
 
         public static int[] Reverse(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -106,7 +106,7 @@ namespace HW6Library
 
         public static int OddArrayElementsCount(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -126,7 +126,7 @@ namespace HW6Library
 
         public static void ReverseOfFirstSecondPart(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -141,7 +141,7 @@ namespace HW6Library
 
         public static int[] SortArrayByInsertMethod(ref int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
@@ -160,9 +160,9 @@ namespace HW6Library
             return array;
         }
 
-        public static void SortArrayByBubbleMethod(ref int[] array)
+        public static void SortArrayByBubbleMethod(int[] array)
         {
-            if (array.Length == 0)
+            if (array == null)
             {
                 throw new ArgumentNullException();
             }
